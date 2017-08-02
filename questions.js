@@ -1,6 +1,5 @@
 // requiring our basic card module exported from basiccard.js
 var BasicMainCard = require("./basiccard.js");
-
 var BasicClozeCard = require("./clozecard.js");
 
 // creating and storing a new basic and cloze card objects
@@ -23,6 +22,7 @@ console.log(firstPres.back);
 console.log(taberu.front);
 console.log(taberu.back);
 //////////////////////SAMPLE CLOZE QUESTIONS 
-console.log(chushingura.clozeRemove);
 console.log(chushingura.clozePart);
-console.log(chushingura.fullText);
+console.log(chushingura.clozeRemove);
+
+// console.log(chushingura.fullText);

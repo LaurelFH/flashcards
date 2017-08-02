@@ -2,8 +2,10 @@
 function BasicClozeCard (clozeRemove, clozePart, fullText){
 
 	this.clozeRemove = clozeRemove;
-	this.clozePart = clozePart;
+	// this.clozePart = clozePart;
 	this.fullText = fullText;
+	//try and reserach more about replace method (replaces param1 with param2-- btoh are strings)
+	this.clozePart = this.fullText.replace(clozeRemove, "...");
 
 };
 	
