@@ -29,7 +29,12 @@ var UNC = new BasicClozeCard("UNC", "is the oldest Public American-Chartered Uni
 // var sonic = new safeBasicCard("Sonic the Hedgehog", "is the former mascot of SEGA", "Sonic the Hedgehog is the former mascot of SEGA");
 // sonic instanceof safeBasicCard; 
 // sonic.prototype instanceof safeBasicCard;
-// console.log(sonic.prototype);
+//if(sonic.prototype instanceof safeBasicCard == true){
+	// console.log(sonic.prototype);	
+// } else{
+//console.log("there was an error with the instance of test");
+//}
+
 
 
 ///////////////////////SAMPLE TEST QUESTIONS 
