@@ -12,6 +12,13 @@
 	};
 
 
+	// function safeBasicCard(front, back){
+	// 	this.front = front;
+	// 	this.back = back;
+
+	// };
+
 //This file should define a Node module that exports a constructor for creating basic flashcards
 
 module.exports = BasicMainCard; 
+// module.exports = safeBasicCard;
