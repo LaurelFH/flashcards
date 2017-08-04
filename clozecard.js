@@ -1,11 +1,11 @@
 
-function BasicClozeCard (clozeRemove, clozePart, fullText){
+function BasicClozeCard (clozeAnswer, clozePart, fullText){
 
-	this.clozeRemove = clozeRemove;
+	this.clozeAnswer = clozeAnswer;
 	// this.clozePart = clozePart;
 	this.fullText = fullText;
-	//try and reserach more about replace method (replaces param1 with param2-- btoh are strings)
-	this.clozePart = this.fullText.replace(clozeRemove, "...");
+	//try and research more about replace method (replaces param1 with param2-- both are strings)
+	this.clozePart = this.fullText.replace(clozeAnswer, "...");
 
 };
 	
@@ -18,3 +18,5 @@ function BasicClozeCard (clozeRemove, clozePart, fullText){
 //This file should define a Node module that exports a constructor for creating cloze-deleition flashcards
 //move to the bottom? needs js?
 module.exports = BasicClozeCard; 
+
+

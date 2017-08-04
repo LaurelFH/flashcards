@@ -12,8 +12,9 @@ var taberu = new BasicMainCard("What is the meaning of the verb taberu?", "To ea
 var serestar = new BasicMainCard("What is the meaning of the verbs ser and estar?", "To be");
 
 //CLOZE VARIABLES
-var chushingura = new BasicClozeCard("Chikamatsu Monzaemon", "...is the author of Goban Taiheiki", "Chikamatsu Monzaemon is the author of the Goban Takheiki");
-var fuenteovejuna = new BasicClozeCard("Lope de Vega", "...is the author of Fuenteovejuna");
+var chushingura = new BasicClozeCard("Chikamatsu Monzaemon", "is the author of Goban Taiheiki", "Chikamatsu Monzaemon is the author of the Goban Takheiki");
+var fuenteovejuna = new BasicClozeCard("Lope de Vega", "is the author of Fuenteovejuna", "Lope de Vega is the author of Fuenteovejuna");
+var cleanCode = new BasicClozeCard("Robert C. Martin", "is the author of Clean Code", "Robert C. Martin is the author of Clean Code");
 // // calling the two card methods on our sample [use a random quesiton?] object
 // //has a front and back property
 // .basicMainCard("",  "");
@@ -31,11 +32,12 @@ console.log(serestar.front);
 console.log(serestar.back);
 //////////////////////SAMPLE CLOZE QUESTIONS 
 console.log(chushingura.clozePart);
-console.log(chushingura.clozeRemove);
+console.log(chushingura.clozeAnswer);
 // console.log(chushingura.fullText);
 console.log(fuenteovejuna.clozePart);
-console.log(fuenteovejuna.clozeRemove);
-
+console.log(fuenteovejuna.clozeAnswer);
+console.log(cleanCode.clozePart);
+console.log(cleanCode.clozeAnswer);
 
 /////////////////////RESOURCES
 //potentially run japanese text through node:  https://www.npmjs.com/package/hepburn
