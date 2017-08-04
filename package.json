@@ -1,0 +1,25 @@
+{
+  "name": "flashcards",
+  "version": "1.0.0",
+  "description": "test app for flashcards and JS constructors",
+  "main": "questions.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LaurelFH/flashcards.git"
+  },
+  "keywords": [
+    "flashcards"
+  ],
+  "author": "LFH",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LaurelFH/flashcards/issues"
+  },
+  "homepage": "https://github.com/LaurelFH/flashcards#readme",
+  "dependencies": {
+    "hepburn": "^1.0.0"
+  }
+}

@@ -3,7 +3,7 @@ var BasicMainCard = require("./basiccard.js");
 // var safeBasicCard = require("./basiccard.js");
 var BasicClozeCard = require("./clozecard.js");
 //running hepburn npm package
-// var hepburn = require('hepburn');
+var hepburn = require('hepburn');
 
 
 // creating and storing a new basic and cloze card objects
@@ -11,6 +11,9 @@ var BasicClozeCard = require("./clozecard.js");
 var firstPres = new BasicMainCard("Who was the first president of the United States", "George Washington");
 var taberu = new BasicMainCard("What is the meaning of the verb taberu?", "To eat");
 var serestar = new BasicMainCard("What is the meaning of the verbs ser and estar?", "To be");
+// var tokyo = new BasicMainCard("What is the meaning of" + hepburn.toHiragana("TOKYO") +"?", "Tokyo");
+
+
 
 //CLOZE VARIABLES
 var chushingura = new BasicClozeCard("Chikamatsu Monzaemon", "is the author of Goban Taiheiki", "Chikamatsu Monzaemon is the author of the Goban Taiheiki");
@@ -19,7 +22,7 @@ var cleanCode = new BasicClozeCard("Robert C. Martin", "is the author of Clean C
 var UNC = new BasicClozeCard("UNC", "is the oldest Public American-Chartered University in the US", "UNC is the oldest Public American-Chartered University in the US");
 
 
-// // calling the two card methods on our sample [use a random quesiton?] object
+// // calling the two card methods on our sample [use a random question?] object
 // //has a front and back property
 // .basicMainCard("",  "");
 // //has
@@ -46,6 +49,8 @@ console.log(taberu.front);
 console.log(taberu.back);
 console.log(serestar.front);
 console.log(serestar.back);
+console.log(tokyo.front);
+console.log(tokyo.back);
 //////////////////////SAMPLE CLOZE QUESTIONS 
 console.log(chushingura.clozePart);
 console.log(chushingura.clozeAnswer);
@@ -63,3 +68,6 @@ console.log(UNC.clozeAnswer);
 //More on scope-safe: https://javascript.info/instanceof
 //http://skilldrick.co.uk/2011/09/understanding-typeof-instanceof-and-constructor-in-javascript/
 //https://stackoverflow.com/questions/8093057/javascript-inheritance-and-the-constructor-property?rq=1
+//http://tobyho.com/2010/11/22/javascript-constructors-and/
+//NPM to fix encoding issues: https://www.npmjs.com/package/encoding-japanese
+//MORE FOR ENCODING:  https://github.com/bnoordhuis/node-iconv

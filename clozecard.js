@@ -1,6 +1,7 @@
 
 function BasicClozeCard (clozeAnswer, clozePart, fullText){
-
+	if(!(this instanceof BasicClozeCard))
+		return new BasicClozeCard (clozeAnswer, clozePart, fullText);
 	this.clozeAnswer = clozeAnswer;
 	// this.clozePart = clozePart;
 	this.fullText = fullText;
